@@ -1,0 +1,545 @@
+* {
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body.cls-grid-layout {
+  display: grid;
+  grid-template-columns: 80px auto;
+}
+
+/* Header - start */
+header {
+  grid-column-start: 2;
+  display: grid;
+  align-items: center;
+}
+header {
+  height: 10em;
+}
+header h1 {
+  font-size: 3em;
+}
+.cls-home-header {
+  background-color: #ae0000;
+  background-size: cover;
+  background-position: 25% 55%;
+  padding-left: 4em;
+}
+.cls-home-header h1 {
+  color: #fff;
+}
+
+/* Header - end */
+
+/* Common navigation bar - start */
+nav * {
+  color: #212121;
+}
+nav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: width 0.2s;
+  z-index: 100;
+  box-shadow: 2px 0px 10px #000;
+}
+/* nav:hover {
+  width: 240px;
+  overflow: visible;
+} */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  width: 13.75em;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  padding: 20px 10px;
+  font-family: sans-serif;
+  align-items: center;
+}
+nav li a img {
+  width: 40px;
+}
+nav .cls-enlarge-logo a img {
+  width: 50px;
+}
+nav li p {
+  width: 140px;
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+nav li a:hover {
+  background-image: linear-gradient(
+    to right,
+    #0095ff 0.5em,
+    rgba(0, 0, 0, 0.1) 7px
+  );
+}
+/* Common navigation bar - end */
+
+/* Common Footer - start */
+footer {
+  grid-column-start: 2;
+  display: grid;
+  color: #fff;
+  text-align: center;
+}
+.cls-polygon {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 2em 0;
+}
+.cls-polygon:before {
+  border-left: 20vw solid transparent;
+  border-right: 60vw solid transparent;
+  content: "";
+  height: 0;
+  left: 0em;
+  position: absolute;
+  top: -7.4em;
+  width: 0;
+}
+.cls-home-footer .cls-polygon {
+  background: #ae0000;
+}
+.cls-home-footer .cls-polygon:before {
+  border-bottom: 7.55em solid #ae0000;
+}
+footer img {
+  z-index: 2;
+  margin-left: 14vw;
+  padding: 1em;
+}
+table {
+  width: 80%;
+  margin: 1em auto;
+  text-align: left;
+}
+th {
+  padding: 1em 2em;
+  width: 2em;
+}
+td {
+  padding: 0em 2em;
+  width: 2em;
+}
+footer a {
+  text-decoration: underline;
+  color: #fff;
+}
+footer small p {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* Common Footer - end */
+
+/*___________________ Home main - start ___________________ */
+.cls-home-main {
+  display: grid;
+  grid-column-start: 2;
+  padding: 0 4em;
+  color: #212121;
+}
+.cls-home-main h1 {
+  padding-top: 1em;
+}
+.cls-home-main section {
+  padding: 2em 0;
+}
+.cls-home-main p {
+  font-size: 1.25em;
+}
+.cls-home-main .cls-section1 * {
+  float: left;
+}
+.cls-home-main .cls-section1 img {
+  width: 60%;
+}
+.cls-home-main .cls-section1 p {
+  width: 30%;
+  padding: 0 1em;
+}
+
+.cls-home-main .cls-section2 p {
+  float: left;
+  width: 30%;
+  font-size: 0.95em;
+  height: 50%;
+}
+.cls-home-main .cls-section2 img {
+  float: right;
+  width: 60%;
+  padding: 0 0 2em 0;
+}
+.cls-home-main .cls-section3 section {
+  display: grid;
+  grid-template-columns: 30% 30% 20% 20%;
+  font-size: 0.7em;
+  padding: 1em 0.25em;
+}
+.cls-home-main .cls-section3 img,
+.cls-home-main .cls-section3 p {
+  width: 80%;
+}
+.cls-home-main .cls-section3 h2 {
+  margin-bottom: 1em;
+}
+.cls-home-main .cls-section4 {
+  text-align: end;
+}
+.cls-home-main .cls-section4 a {
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: #850001;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.hero .cta {
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+.hero .cta:hover {
+  background-color: #c8dfff;
+}
+
+/* Features section styles */
+.features {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.feature {
+  margin-bottom: 40px;
+}
+.feature img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.feature p {
+  font-size: 1.2rem;
+}
+
+/* Interactive section styles */
+.interactive {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+.interactive h2 {
+  font-size: 2.5rem;
+}
+.interactive p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.interactive ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.interactive li {
+  margin-right: 20px;
+}
+.interactive li:last-of-type {
+  margin-right: 0;
+}
+#infographics h3,
+.interactive a {
+  text-decoration: none;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+  margin: 1em;
+}
+#infographics h3:hover,
+.interactive a:hover {
+  background-color: #444;
+}
+
+/* Infographics section styles */
+.infographics {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+.infographics h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.infographic {
+  margin-bottom: 40px;
+}
+.infographic img {
+  height: 300px;
+  margin-bottom: 20px;
+}
+.infographic p {
+  font-size: 1.2rem;
+}
+#infographics .infographic {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 1em;
+  align-items: center;
+  padding: 2em;
+}
+#infographics .infographic img {
+  margin: 0 auto;
+}
+
+/*___________________ Home main - end ___________________ */
+
+/*___________________ Budget and Income/Expense - start ___________________ */
+/* General styles */
+.cls-budget-main h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.cls-budget-main h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.cls-budget-main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.cls-budget-main th,
+.cls-budget-main td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.cls-budget-main th {
+  background-color: #fff;
+}
+
+/* Form styles */
+.cls-budget-main #budget-savings-form,
+.cls-budget-main #budget-form,
+.cls-budget-main #contact-form {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ddd;
+}
+.cls-budget-main .budget-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cls-budget-main .budget-item,
+.cls-budget-main .savings-item {
+  flex: 1;
+  margin: 0 1rem;
+}
+.cls-budget-main .budget-input-container,
+.cls-budget-main .savings-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.budget-input-container p {
+  flex: 1;
+}
+.cls-budget-main label {
+  flex: 1;
+  margin-right: 1rem;
+}
+.cls-budget-main input[type="text"],
+.cls-budget-main input[type="email"],
+.cls-budget-main input[type="number"],
+.cls-budget-main textarea {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.cls-budget-main button[type="submit"],
+.cls-budget-main button[type="button"] {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+.cls-budget-main button[type="submit"]:hover,
+.cls-budget-main button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+#budget-results,
+#savings-results {
+  margin: 1rem 0;
+}
+#budget-total,
+#savings-need {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.cls-error-p,
+.cls-error p {
+  font-size: 0.5em;
+  color: red;
+  margin: 0 10px;
+}
+
+/* History styles */
+#budget-history {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ddd;
+  margin-top: 2rem;
+}
+#budget-table {
+  margin-top: 1rem;
+}
+#budget-month {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px;
+  flex: 1;
+  border-radius: 5px;
+}
+#budget-category {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px;
+  flex: 1;
+  border-radius: 5px;
+}
+#budget-month1 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px;
+  flex: 1;
+  border-radius: 5px;
+}
+#budget-category1 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px;
+  flex: 1;
+  border-radius: 5px;
+}
+hr {
+  margin: 1.2em 0;
+}
+#savings-chart {
+  width: 200px;
+  height: 200px;
+}
+.chart {
+  text-align: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1em;
+}
+/*___________________ Budget and Income/Expense - end ___________________ */
+.history-container {
+  position: relative;
+}
+
+.loading-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
+  z-index: 2;
+}
+
+.cls-ieform-btn {
+  display: flex;
+  margin: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cls-ieform-btn p {
+  color: #ae0000;
+}
+.cls-analysis-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#contact-form {
+  margin: 100px;
+}

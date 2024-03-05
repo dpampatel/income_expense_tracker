@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Metrics</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body class="cls-grid-layout">
+    <header class="cls-home-header">
+      <h1>Contact Us</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="cls-enlarge-logo">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="Logo" />
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="cls-enlarge-logo">
+          <a href="./budget.html">
+            <img src="../images/budget.png" alt="Budget Icon" />
+            <p>Budget</p>
+          </a>
+        </li>
+        <li class="cls-enlarge-logo">
+          <a href="./income_expense.html">
+            <img
+              src="../images/income_expenses.png"
+              alt="Income Expense Icon"
+            />
+            <p>Income & Expense</p>
+          </a>
+        </li>
+        <li class="cls-enlarge-logo">
+          <a href="./history.html">
+            <img src="../images/history.png" alt="History Icon" />
+            <p>History</p>
+          </a>
+        </li>
+        <li class="cls-enlarge-logo">
+          <a href="./contact.html">
+            <img src="../images/contact.png" alt="Contact Us Icon" />
+            <p>Contact Us</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="cls-home-main cls-budget-main">
+      <!-- Contact Us Form -->
+      <form id="contact-form">
+        <h2>Contact Us</h2>
+        <div class="budget-input-container">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <p class="cls-error-p" id="error-name"></p>
+        </div>
+        <div class="budget-input-container">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+          <p class="cls-error-p" id="error-email"></p>
+        </div>
+        <div class="budget-input-container">
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" />
+          <p class="cls-error-p" id="error-phone"></p>
+        </div>
+        <div class="budget-input-container">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <p class="cls-error-p" id="error-message"></p>
+        </div>
+        <button type="submit" id="contact-submit-btn">Submit</button>
+      </form>
+    </main>
+    <footer class="cls-home-footer">
+      <img
+        src="../images/budget-that-syncs-couple.png"
+        alt="Couple budgeting"
+      />
+      <section class="cls-polygon">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Disclaimer</th>
+              <th scope="col">Social</th>
+              <th scope="col">Quick Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">
+                <p>
+                  This budgeting tool is provided for informational purposes
+                  only and is not intended to be a substitute for professional
+                  financial advice. While every effort has been made to ensure
+                  the accuracy of the information provided, we make no
+                  representations or warranties of any kind, express or implied,
+                  about the completeness, accuracy, reliability, suitability, or
+                  availability with respect to the budgeting tool or the
+                  information, products, services, or related graphics contained
+                  in the tool for any purpose.
+                </p>
+              </td>
+              <td>
+                <a href="#" aria-label="Find us on Github">GitHub </a>
+              </td>
+              <td>
+                <a href="../index.html">
+                  <p>Home</p>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" aria-label="Find us on Twitter">Twitter </a>
+              </td>
+              <td>
+                <a href="./income_expense.html">
+                  <p>Income and Expense</p>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" aria-label="Find us on Youtube">YouTube </a>
+              </td>
+
+              <td>
+                <a href="./budget.html">
+                  <p>Budget</p>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <small>
+          <p>C_pyright 2023 &copy; Deepam Mahesh Patel | 8812460</p>
+        </small>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../external/jquery-ui.min.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
